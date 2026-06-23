@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>کارن زارع تیموری | نمونه کار</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:tahoma;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+header{
+    background:#2563eb;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:40px;
+}
+
+header p{
+    margin-top:10px;
+    font-size:20px;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+}
+
+section{
+    margin:50px 0;
+}
+
+h2{
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    margin-bottom:15px;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.btn{
+    display:inline-block;
+    background:#2563eb;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:8px;
+    margin-top:15px;
+}
+
+footer{
+    text-align:center;
+    background:#111827;
+    color:white;
+    padding:20px;
+}
+.skill{
+    margin-bottom:20px;
+}
+
+.bar{
+    width:100%;
+    height:12px;
+    background:#ddd;
+    border-radius:20px;
+    overflow:hidden;
+    margin-top:5px;
+}
+
+.bar div{
+    height:100%;
+    background:#2563eb;
+    border-radius:20px;
+}
+header img{
+    transition:0.4s;
+}
+
+header img:hover{
+    transform:scale(1.05);
+}
+.project-card,
+#certificates .bg-white{
+    transition:all .3s ease;
+}
+
+.project-card:hover,
+#certificates .bg-white:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+.hidden-section{
+    opacity:0;
+    transform:translateY(40px);
+    transition:all .8s ease;
+}
+
+.show-section{
+    opacity:1;
+    transform:translateY(0);
+}
+.whatsapp-btn{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    width:65px;
+    height:65px;
+    background:#25D366;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    text-decoration:none;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+    z-index:9999;
+}
+</style>
+</head>
+
+<body>
+
+    <nav class="bg-black text-white sticky top-0 z-50 shadow-lg">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+        <h1 class="text-xl font-bold">
+            کارن زارع تیموری
+        </h1>
+
+        <ul class="flex flex-wrap justify-center gap-4 text-sm"></ul>
+            <li><a href="#about" class="hover:text-gray-300">درباره من</a></li>
+            <li><a href="#skills" class="hover:text-gray-300">مهارت‌ها</a></li>
+            <li><a href="#certificates" class="hover:text-gray-300">مدارک</a></li>
+            <li><a href="#projects" class="hover:text-gray-300">پروژه‌ها</a></li>
+            <li><a href="#contact" class="hover:text-gray-300">تماس</a></li>
+        </flex>
+
+    </div>
+</nav>
+
+<header class=" class="bg-gradient-to-r from-black via-gray-900 to-blue-900 text-white min-h-screen flex flex-col items-center justify-center"></header>
+
+    <img
+        src="img/Screenshot 2026-06-23 170643.png"
+        alt="کارن زارع تیموری"
+        class="w-44 h-44 rounded-full border-4 border-blue-500 object-cover mb-6 shadow-2xl"
+    >
+
+    <h1 class="text-5xl md:text-6xl font-bold mb-4">
+        کارن زارع تیموری
+    </h1>
+
+    <p class="text-xl text-gray-300 mb-8">
+        طراح و توسعه‌دهنده وب
+    </p>
+
+    <div class="flex gap-4 flex-wrap justify-center">
+
+        <a
+            href="#projects"
+            class="bg-blue-600 px-6 py-3 rounded-full font-bold hover:bg-blue-700 transition"
+        >
+            مشاهده پروژه‌ها
+        </a>
+
+        <a
+            href="tel:+989338966393"
+            class="border border-white px-6 py-3 rounded-full font-bold hover:bg-white hover:text-black transition"
+        >
+            تماس با من
+        </a>
+
+    </div>
+
+</header>
+
+<div class="container">
+
+<section class="hidden-section">
+    <h2>درباره من</h2>
+
+    <div class="card">
+        <p>
+      من کارن زارع تیموری هستم؛ علاقه‌مند به طراحی و توسعه وب.
+      دارای مدارک ICDL، برنامه‌نویسی HTML و Bootstrap از سازمان
+      آموزش فنی و حرفه‌ای کشور. هدف من ساخت وب‌سایت‌های مدرن،
+      سریع و کاربرپسند است.
+     </p>
+    </div>
+</section>
+<section class="hidden-section">
+    <h2>مدارک و گواهینامه‌ها</h2>
+
+    <div class="card">
+        <p>✅ گواهینامه مهارت ICDL</p>
+        <p>✅ صادر شده توسط سازمان آموزش فنی و حرفه‌ای کشور</p>
+        <p>✅ مهارت‌های هفت‌گانه کامپیوتر</p>
+    </div>
+    
+</section>
+
+<section class="hidden-section">
+    <h2>مهارت‌ها</h2>
+
+    <div class="card">HTML ⭐⭐⭐⭐⭐</div>
+    <div class="card">CSS ⭐⭐⭐⭐</div>
+    <div class="card">Tailwind CSS ⭐⭐⭐</div>
+    <div class="card">English ⭐⭐⭐⭐</div>
+</section>
+
+
+
+<section class="skills hidden-section">
+    <h2>مهارت‌های من</h2>
+
+    <div class="skill">
+        <span>HTML</span>
+        <div class="bar"><div style="width:90%"></div></div>
+    </div>
+
+    <div class="skill">
+        <span>CSS</span>
+        <div class="bar"><div style="width:80%"></div></div>
+    </div>
+
+    <div class="skill">
+        <span>Tailwind CSS</span>
+        <div class="bar"><div style="width:60%"></div></div>
+    </div>
+</section>
+
+<section class="hidden-section">
+    <h2>نمونه کارها</h2>
+
+    </section>
+<section>
+    <h2>ارتباط با من</h2>
+
+   <div class="card">
+    <p>📞 09338966393</p>
+    <p>📧 karn123456789078@gmail.com</p>
+</div>
+</section>
+
+ <div>
+<button id="themeBtn">🌙</button>
+
+</div>
+
+        <section id="certificates" class="py-16 bg-gray-100 hidden-section">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">
+      مدارک و گواهینامه‌ها
+    </h2>
+    </div>
+    </section>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <div class="bg-white rounded-xl shadow-lg p-4">
+        <img src="img/Screenshot 2026-06-23 183910.png" alt="مدرک اول"
+          class="w-full h-48 object-cover rounded-lg">
+        <h3 class="text-xl font-bold mt-4">
+       ICDL Certificate
+       </h3>
+        <p class="text-gray-600">
+گواهینامه مهارت‌های هفت‌گانه ICDL
+       </p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg p-4">
+        <img src="img/Screenshot 2026-06-23 184033.png" alt="مدرک دوم"
+          class="w-full h-48 object-cover rounded-lg">
+        <h3 class="text-xl font-bold mt-4">
+            HTML & CSS Certificate
+        </h3>
+        <p class="text-gray-600">
+گواهینامه طراحی صفحات وب با HTML و CSS
+       </p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg p-4">
+        <img src="img/Screenshot 2026-06-23 184114.png" alt="مدرک سوم"
+          class="w-full h-48 object-cover rounded-lg">
+        <h3 class="text-xl font-bold mt-4">
+            Bootstrap Certificate
+        </h3>
+        <p class="text-gray-600">
+گواهینامه Bootstrap و طراحی رابط کاربری
+       </p>
+      </div>
+
+    </div>
+  </div>
+
+<section class="py-20 px-6 bg-white hidden-section">
+
+    <h2 class="text-4xl font-bold text-center mb-10">
+        پروژه‌های من
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+        <div class="border rounded-2xl p-6 shadow-lg hover:-translate-y-2 transition">
+            <h3 class="text-2xl font-bold mb-3">ملی پیامک</h3>
+            <p class="text-gray-600">
+                سایت معرفی خدمات پیامکی
+            </p>
+        </div>
+
+        <div class="border rounded-2xl p-6 shadow-lg hover:-translate-y-2 transition">
+            <h3 class="text-2xl font-bold mb-3">نمونه کار شخصی</h3>
+            <p class="text-gray-600">
+                معرفی مهارت‌ها و پروژه‌ها
+            </p>
+        </div>
+
+        <div class="border rounded-2xl p-6 shadow-lg hover:-translate-y-2 transition">
+            <h3 class="text-2xl font-bold mb-3">پروژه آینده</h3>
+            <p class="text-gray-600">
+                به زودی...
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<a
+href="https://github.com/karn123456789078-cpu/melli-payamak-v2"
+target="_blank"
+class="inline-block bg-blue-600 text-white px-5 py-2 rounded-full">
+مشاهده پروژه
+</a>
+
+<a href="resume.pdf"
+   download
+   class="inline-flex items-center gap-3 bg-green-600 text-white px-6 py-3 rounded-xl font-bold shadow-lg hover:bg-green-700 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+
+    <i class="fa-solid fa-file-pdf text-xl"></i>
+
+    دانلود رزومه
+
+</a>
+
+<a href="https://github.com/karn123456789078-cpu/melli-payamak-v2"
+   target="_blank">
+   مشاهده پروژه در GitHub
+</a>
+
+<a href="https://wa.me/989338966393"
+   target="_blank"
+   class="whatsapp-btn">
+   <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<a href="https://github.com/yourusername/project-name"
+   target="_blank"
+   class="block border rounded-2xl p-6 shadow-lg hover:-translate-y-2 hover:shadow-2xl transition">
+
+<section class="hidden-section py-16 bg-black text-white text-center">
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+        <div>
+            <h3 class="text-4xl font-bold">+3</h3>
+            <p>مدرک معتبر</p>
+        </div>
+
+        <div>
+            <h3 class="text-4xl font-bold">+5</h3>
+            <p>پروژه انجام شده</p>
+        </div>
+
+        <div>
+            <h3 class="text-4xl font-bold">100%</h3>
+            <p>انگیزه برای پیشرفت</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<footer class="bg-gray-900 text-white py-8 text-center">
+
+    <h3 class="text-2xl font-bold mb-2">
+        کارن زارع تیموری
+    </h3>
+
+    <p class="text-gray-400">
+        طراح و توسعه‌دهنده وب
+    </p>
+
+    <div class="mt-4">
+        <a href="mailto:karn123456789078@gmail.com">
+            📧 ایمیل
+        </a>
+    </div>
+
+</footer>
+
+<script>
+const btn = document.getElementById("themeBtn");
+
+btn.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+
+    if(document.body.classList.contains("dark")){
+        btn.innerHTML = "☀️";
+    }else{
+        btn.innerHTML = "🌙";
+    }
+});
+</script>
+<script>
+const sections = document.querySelectorAll(".hidden-section");
+
+window.addEventListener("scroll", () => {
+    sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+
+        if(sectionTop < window.innerHeight - 100){
+            section.classList.add("show-section");
+        }
+    });
+});
+</script>
+<script>
+    document.getElementById("topBtn")
+.addEventListener("click",()=>{
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+});
+</script>
+<button id="topBtn">
+⬆️
+</button>
+</body>
+</html>
